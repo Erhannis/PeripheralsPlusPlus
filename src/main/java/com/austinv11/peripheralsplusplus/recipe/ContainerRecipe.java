@@ -4,6 +4,7 @@ import com.austinv11.collectiveframework.minecraft.utils.Colors;
 import com.austinv11.collectiveframework.minecraft.utils.NBTHelper;
 import com.austinv11.collectiveframework.utils.ArrayUtils;
 import com.austinv11.peripheralsplusplus.blocks.BlockPeripheralContainer;
+import com.austinv11.peripheralsplusplus.blocks.IPeripheralBlock;
 import com.austinv11.peripheralsplusplus.init.ModBlocks;
 import com.austinv11.peripheralsplusplus.reference.Config;
 import dan200.computercraft.api.peripheral.IPeripheral;
@@ -44,9 +45,9 @@ public class ContainerRecipe implements IRecipe {
 					else if (block instanceof BlockPeripheralContainer) {
 						hasContainer = true;
 						container = craftingInventory.getStackInSlot(i);
-					} else if (ArrayUtils.indexOf(blacklist, block) == -1) {
+					} else if (ArrayUtils.indexOf(blacklist, block) != -1) {
 						return false;
-					} else if (block instanceof IPeripheralProvider) {
+					} else if (block instanceof IPeripheralBlock) {
 						hasPeripheral = true;
 						numOfPeripherals++;
 					}
@@ -62,7 +63,7 @@ public class ContainerRecipe implements IRecipe {
 		ItemStack base = new ItemStack(ModBlocks.peripheralContainer);
 		for (int i = 0; i < craftingInventory.getSizeInventory(); i++)
 			if (craftingInventory.getStackInSlot(i) != null)
-				if (Block.getBlockFromItem(craftingInventory.getStackInSlot(i).getItem()) instanceof IPeripheralProvider && !(Block.getBlockFromItem(craftingInventory.getStackInSlot(i).getItem()) instanceof BlockPeripheralContainer)) {
+				if (Block.getBlockFromItem(craftingInventory.getStackInSlot(i).getItem()) instanceof IPeripheralBlock && !(Block.getBlockFromItem(craftingInventory.getStackInSlot(i).getItem()) instanceof BlockPeripheralContainer)) {
 					TileEntity ent = Block.getBlockFromItem(craftingInventory.getStackInSlot(i).getItem()).createTileEntity(null, 0);
 					if (ent != null && ent instanceof IPeripheral)
 						map.put(Block.getIdFromBlock(Block.getBlockFromItem(craftingInventory.getStackInSlot(i).getItem())), (IPeripheral)ent);

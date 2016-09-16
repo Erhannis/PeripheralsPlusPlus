@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-public class BlockAntenna extends BlockPPP implements ITileEntityProvider {
+public class BlockAntenna extends BlockPPP implements ITileEntityProvider, IPeripheralBlock {
 
 	public BlockAntenna() {
 		super();

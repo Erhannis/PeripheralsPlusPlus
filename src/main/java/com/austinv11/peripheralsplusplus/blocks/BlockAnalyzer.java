@@ -20,7 +20,7 @@ import net.minecraft.world.World;
 
 import java.util.ArrayList;
 
-public abstract class BlockAnalyzer extends BlockContainer {
+public abstract class BlockAnalyzer extends BlockContainer implements IPeripheralBlock {
 
 	public BlockAnalyzer() {
 		super(Material.rock);

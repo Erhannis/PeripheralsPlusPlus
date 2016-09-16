@@ -7,7 +7,7 @@ import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 
-public class BlockTimeSensor extends BlockPPP implements ITileEntityProvider {
+public class BlockTimeSensor extends BlockPPP implements ITileEntityProvider, IPeripheralBlock {
 
 	public BlockTimeSensor() {
 		super();

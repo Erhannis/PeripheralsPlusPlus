@@ -18,7 +18,7 @@ import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlockTeleporter extends BlockPPP implements ITileEntityProvider {
+public class BlockTeleporter extends BlockPPP implements ITileEntityProvider, IPeripheralBlock {
 
 	public IIcon frontIcon;
 
