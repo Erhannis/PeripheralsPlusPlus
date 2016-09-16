@@ -20,7 +20,7 @@ import net.minecraft.world.World;
 
 import java.util.ArrayList;
 
-public class BlockPlayerInterface extends BlockContainerPPP {
+public class BlockPlayerInterface extends BlockContainerPPP implements IPeripheralBlock {
 
     public BlockPlayerInterface()
     {

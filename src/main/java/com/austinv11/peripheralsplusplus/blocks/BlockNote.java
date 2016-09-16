@@ -5,7 +5,7 @@ import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 
-public class BlockNote extends BlockPPP implements ITileEntityProvider {
+public class BlockNote extends BlockPPP implements ITileEntityProvider, IPeripheralBlock {
 
 	public BlockNote() {
 		super();

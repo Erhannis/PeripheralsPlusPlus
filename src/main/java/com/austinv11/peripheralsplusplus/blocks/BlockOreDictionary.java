@@ -2,12 +2,13 @@ package com.austinv11.peripheralsplusplus.blocks;
 
 import com.austinv11.peripheralsplusplus.reference.Config;
 import com.austinv11.peripheralsplusplus.tiles.TileEntityOreDictionary;
+
 import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 
-public class BlockOreDictionary extends BlockPPP implements ITileEntityProvider {
+public class BlockOreDictionary extends BlockPPP implements ITileEntityProvider, IPeripheralBlock {
 
 	public BlockOreDictionary() {
 		super();

@@ -8,7 +8,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 
-public class BlockMEBridge extends BlockPPP implements ITileEntityProvider {
+public class BlockMEBridge extends BlockPPP implements ITileEntityProvider, IPeripheralBlock {
 
 	public BlockMEBridge() {
 		super();

@@ -19,7 +19,7 @@ import net.minecraft.world.World;
 
 import java.util.ArrayList;
 
-public class BlockInteractiveSorter extends BlockContainerPPP {
+public class BlockInteractiveSorter extends BlockContainerPPP implements IPeripheralBlock {
 	
 	public BlockInteractiveSorter() {
 		super(Material.rock);

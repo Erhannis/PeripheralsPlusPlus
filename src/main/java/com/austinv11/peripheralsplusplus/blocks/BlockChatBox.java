@@ -7,7 +7,7 @@ import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 
-public class BlockChatBox extends BlockPPP implements ITileEntityProvider {
+public class BlockChatBox extends BlockPPP implements ITileEntityProvider, IPeripheralBlock {
 
 	public BlockChatBox() {
 		super();

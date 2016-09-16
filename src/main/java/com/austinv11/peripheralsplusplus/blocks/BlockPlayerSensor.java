@@ -7,7 +7,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 
-public class BlockPlayerSensor extends BlockPPP implements ITileEntityProvider {
+public class BlockPlayerSensor extends BlockPPP implements ITileEntityProvider, IPeripheralBlock {
 
 	public BlockPlayerSensor() {
 		super();

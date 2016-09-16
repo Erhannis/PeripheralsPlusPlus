@@ -13,7 +13,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.common.util.ForgeDirection;
 
-public class BlockSpeaker extends BlockPPP implements ITileEntityProvider {
+public class BlockSpeaker extends BlockPPP implements ITileEntityProvider, IPeripheralBlock {
 
 	public IIcon frontIcon;
 
